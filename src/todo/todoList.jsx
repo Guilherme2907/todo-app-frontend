@@ -7,7 +7,7 @@ export default props => {
       return (
         <tr key={todo._id}>
           <td className={todo.done ? 'markedAsDone' : ''}>{todo.description}</td>
-          <td>
+          <td className="align-buttons">
             <IconButton
               estilo="danger"
               icon="trash-alt"
@@ -36,7 +36,7 @@ export default props => {
       <thead>
         <tr>
           <th>Descrição</th>
-          <th>Ações</th>
+          <th className="tableActions">Ações</th>
         </tr>
       </thead>
       <tbody>{renderRows()}</tbody>
